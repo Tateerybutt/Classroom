@@ -8,18 +8,28 @@
 
 <body>
     <h1 class="title">Data of Students in Class 9<sup>th</sup> B</h1>
-    <button onclick="createXLSX()">Downdload XLSX file</button>
+    <div class="control">
+        <div class="verification" id="verification">
+            <b>To get Full access, Enter the password:</b>
+            <input type="text" name="password" id="password" maxlength="15">
+            <button onclick="handlePasswordInput()">Let's Go</button>
+            <span id="alert">The password is incorrect.</span>
+        </div>
+        <div class="controls" id="controls">
+            <button class="download-button" onclick="createXLSX()"><i class="fa-solid fa-file-export"></i>Export Data</button>
+        </div>
+    </div>
     <table id="studentTable">
         <thead>
             <tr id="tableHeaders">
             </tr>
         </thead>
         <tbody id="tableBody">
-            <!-- Table rows with student data will be dynamically generated here -->
         </tbody>
     </table>
+    <script src="https://kit.fontawesome.com/5ba3ca3a53.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.0/xlsx.full.min.js"></script>
     <script src="script.js"></script>
-    <script src="createXLSX.js"></script>
 </body>
 
 </html>
