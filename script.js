@@ -16,7 +16,7 @@ let students = [{
     {
         'roll No.': '02',
         'name': 'Moiz Butt',
-        'phone No.': '+92-335-5863571',
+        'phone No.': '+92-317-7395778',
         'num Of Notebooks': 9,
         'English': 'Recieved',
         'Computer': 'Not Recieved',
